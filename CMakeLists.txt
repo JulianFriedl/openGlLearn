@@ -9,6 +9,8 @@ project(openGlLearn)
 # C++ standard
 set(CMAKE_CXX_STANDARD 17)
 
+set(OpenGL_GL_PREFERENCE GLVND)
+
 # Add source files
 add_executable(openGlLearn src/main.cpp src/glad.c)
 
