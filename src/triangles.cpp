@@ -224,13 +224,12 @@ int main(){
         glClear(GL_COLOR_BUFFER_BIT); // make the buffer set all pixel to ClearColor
 
         glUseProgram(shaderProgram);
-
         glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
         glBindVertexArray(VAO1);
         glDrawArrays(GL_TRIANGLES, 0, 6);
 
-        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
         glUseProgram(shaderProgram2);
+        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
         glBindVertexArray(VAO2);
         glDrawArrays(GL_TRIANGLES, 0, 6);
 
